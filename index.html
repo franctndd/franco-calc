@@ -207,8 +207,8 @@
                                     </svg>
                                 </div>
                                 <div class="font-heading font-semibold text-sm text-slate-200">เหล็กหลอม</div>
-                                <div class="text-[11px] text-slate-400 mt-0.5">โอกาส 90%</div>
-                                <div class="text-[11px] text-slate-300 mt-1 font-mono font-medium">ค่าแรง 3,500/ชิ้น</div>
+                                <div id="card_rate_ingot" class="text-[11px] text-slate-400 mt-0.5">โอกาส 90%</div>
+                                <div id="card_fee_ingot" class="text-[11px] text-slate-300 mt-1 font-mono font-medium">ค่าแรง 3,500/ชิ้น</div>
                             </div>
                         </label>
 
@@ -248,8 +248,8 @@
                                     </svg>
                                 </div>
                                 <div class="font-heading font-semibold text-sm text-sky-200">ชิ้นส่วนปืนโลหะ</div>
-                                <div class="text-[11px] text-slate-400 mt-0.5">โอกาส 95%</div>
-                                <div class="text-[11px] text-sky-400 mt-1 font-mono font-medium">ค่าแรง 5,500/ชิ้น</div>
+                                <div id="card_rate_gun" class="text-[11px] text-slate-400 mt-0.5">โอกาส 95%</div>
+                                <div id="card_fee_gun" class="text-[11px] text-sky-400 mt-1 font-mono font-medium">ค่าแรง 5,500/ชิ้น</div>
                             </div>
                         </label>
 
@@ -284,8 +284,8 @@
                                     </svg>
                                 </div>
                                 <div class="font-heading font-semibold text-sm text-purple-200">แผ่นเกราะ</div>
-                                <div class="text-[11px] text-slate-400 mt-0.5">โอกาส 100%</div>
-                                <div class="text-[11px] text-purple-400 mt-1 font-mono font-medium">ค่าแรง 5,000/ชิ้น</div>
+                                <div id="card_rate_armor" class="text-[11px] text-slate-400 mt-0.5">โอกาส 100%</div>
+                                <div id="card_fee_armor" class="text-[11px] text-purple-400 mt-1 font-mono font-medium">ค่าแรง 5,000/ชิ้น</div>
                             </div>
                         </label>
                     </div>
@@ -520,7 +520,7 @@
                                 </div>
                                 <div>
                                     <div class="text-sm font-semibold text-slate-200">เหล็กหลอม</div>
-                                    <div class="text-[11px] text-slate-400">เรท 3,500/ชิ้น (ใช้แร่ 5 อัน)</div>
+                                    <div id="bulk_rate_label_ingot" class="text-[11px] text-slate-400">เรท 3,500/ชิ้น (ใช้แร่ 5 อัน)</div>
                                 </div>
                             </div>
                             <div class="flex items-center gap-2">
@@ -546,7 +546,7 @@
                                 </div>
                                 <div>
                                     <div class="text-sm font-semibold text-sky-200">ชิ้นส่วนปืนโลหะ</div>
-                                    <div class="text-[11px] text-slate-400">เรท 5,500/ชิ้น (เหล็ก 1 + แร่ 3)</div>
+                                    <div id="bulk_rate_label_gun" class="text-[11px] text-slate-400">เรท 5,500/ชิ้น (เหล็ก 1 + แร่ 3)</div>
                                 </div>
                             </div>
                             <div class="flex items-center gap-2">
@@ -573,7 +573,7 @@
                                 </div>
                                 <div>
                                     <div class="text-sm font-semibold text-purple-200">แผ่นเกราะ</div>
-                                    <div class="text-[11px] text-slate-400">เรท 5,000/ชิ้น (เหล็ก 1 + แร่ 1)</div>
+                                    <div id="bulk_rate_label_armor" class="text-[11px] text-slate-400">เรท 5,000/ชิ้น (เหล็ก 1 + แร่ 1)</div>
                                 </div>
                             </div>
                             <div class="flex items-center gap-2">
@@ -748,8 +748,8 @@
                         </div>
                         <div>
                             <div class="text-xs text-slate-300 font-semibold">เหล็กหลอม</div>
-                            <div class="text-sm font-bold text-white">โอกาส 90%</div>
-                            <div class="text-[10px] text-slate-400">3,500/ติด</div>
+                            <div id="sim_badge_rate_ingot" class="text-sm font-bold text-white">โอกาส 90%</div>
+                            <div id="sim_badge_fee_ingot" class="text-[10px] text-slate-400">3,500/ติด</div>
                         </div>
                     </button>
                     <button onclick="setSimItem('gun_parts')" id="sim-btn-gun" class="p-3 rounded-xl border border-[#1e2330] bg-black text-left transition-all flex items-center gap-3">
@@ -766,8 +766,8 @@
                         </div>
                         <div>
                             <div class="text-xs text-sky-400 font-semibold">ชิ้นส่วนปืน</div>
-                            <div class="text-sm font-bold text-white">โอกาส 95%</div>
-                            <div class="text-[10px] text-slate-400">5,500/ติด</div>
+                            <div id="sim_badge_rate_gun" class="text-sm font-bold text-white">โอกาส 95%</div>
+                            <div id="sim_badge_fee_gun" class="text-[10px] text-slate-400">5,500/ติด</div>
                         </div>
                     </button>
                     <button onclick="setSimItem('armor')" id="sim-btn-armor" class="p-3 rounded-xl border border-[#1e2330] bg-black text-left transition-all flex items-center gap-3">
@@ -785,8 +785,8 @@
                         </div>
                         <div>
                             <div class="text-xs text-purple-400 font-semibold">แผ่นเกราะ</div>
-                            <div class="text-sm font-bold text-white">โอกาส 100%</div>
-                            <div class="text-[10px] text-slate-400">5,000/ติด</div>
+                            <div id="sim_badge_rate_armor" class="text-sm font-bold text-white">โอกาส 100%</div>
+                            <div id="sim_badge_fee_armor" class="text-[10px] text-slate-400">5,000/ติด</div>
                         </div>
                     </button>
                 </div>
@@ -856,10 +856,17 @@
             </div>
 
             <div class="space-y-4 text-xs">
-                <!-- Market Ore Price -->
-                <div class="space-y-1">
-                    <label class="font-medium text-slate-300">ราคาตลาด แร่เหล็ก (เหรียญ/ก้อน):</label>
-                    <input type="number" id="cfg_ore_price" value="1200" class="w-full bg-black border border-[#242b3b] rounded-lg p-2.5 font-mono text-sm text-amber-400">
+                <!-- Market Ore Price with Step 100 -->
+                <div class="bg-[#050608] p-3 rounded-xl border border-[#1a1e28] space-y-2">
+                    <div class="flex justify-between items-center">
+                        <label class="font-medium text-slate-300">ราคาตลาด แร่เหล็ก (เหรียญ/ก้อน):</label>
+                        <span id="cfg_ore_val_display" class="font-mono text-sm font-bold text-amber-400">1,200</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <button type="button" onclick="adjustCfgFee('cfg_ore_price', -100)" class="w-8 h-8 rounded-lg bg-black hover:bg-[#111520] border border-[#242b3b] text-slate-300 font-bold active:scale-95 transition-all">-100</button>
+                        <input type="range" id="cfg_ore_price" min="100" max="10000" step="100" value="1200" oninput="syncCfgDisplay('cfg_ore_price', 'cfg_ore_val_display')" class="flex-1 accent-amber-500 bg-[#161a24] h-2 rounded-lg cursor-pointer">
+                        <button type="button" onclick="adjustCfgFee('cfg_ore_price', 100)" class="w-8 h-8 rounded-lg bg-black hover:bg-[#111520] border border-[#242b3b] text-slate-300 font-bold active:scale-95 transition-all">+100</button>
+                    </div>
                 </div>
 
                 <!-- Success Rates -->
@@ -878,19 +885,45 @@
                     </div>
                 </div>
 
-                <!-- Fees -->
-                <div class="grid grid-cols-1 sm:grid-cols-3 gap-2">
-                    <div class="space-y-1">
-                        <label class="font-medium text-slate-300">ค่าแรงหลอมเหล็ก:</label>
-                        <input type="number" id="cfg_fee_ingot" value="3500" class="w-full bg-black border border-[#242b3b] rounded-lg p-2 font-mono text-amber-300">
+                <!-- Fees with Slider & Step 100 -->
+                <div class="space-y-3 pt-1">
+                    <!-- Fee: Ingot -->
+                    <div class="bg-[#050608] p-3 rounded-xl border border-[#1a1e28] space-y-2">
+                        <div class="flex justify-between items-center">
+                            <label class="font-medium text-slate-300">ค่าแรงหลอมเหล็ก:</label>
+                            <span id="cfg_fee_ingot_display" class="font-mono text-sm font-bold text-slate-200">3,500 เหรียญ</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <button type="button" onclick="adjustCfgFee('cfg_fee_ingot', -100)" class="w-8 h-8 rounded-lg bg-black hover:bg-[#111520] border border-[#242b3b] text-slate-300 font-bold active:scale-95 transition-all">-100</button>
+                            <input type="range" id="cfg_fee_ingot" min="500" max="20000" step="100" value="3500" oninput="syncCfgDisplay('cfg_fee_ingot', 'cfg_fee_ingot_display', ' เหรียญ')" class="flex-1 accent-slate-400 bg-[#161a24] h-2 rounded-lg cursor-pointer">
+                            <button type="button" onclick="adjustCfgFee('cfg_fee_ingot', 100)" class="w-8 h-8 rounded-lg bg-black hover:bg-[#111520] border border-[#242b3b] text-slate-300 font-bold active:scale-95 transition-all">+100</button>
+                        </div>
                     </div>
-                    <div class="space-y-1">
-                        <label class="font-medium text-slate-300">ค่าแรงชิ้นส่วนปืน:</label>
-                        <input type="number" id="cfg_fee_gun" value="5500" class="w-full bg-black border border-[#242b3b] rounded-lg p-2 font-mono text-amber-300">
+
+                    <!-- Fee: Gun Parts -->
+                    <div class="bg-[#050608] p-3 rounded-xl border border-[#1a1e28] space-y-2">
+                        <div class="flex justify-between items-center">
+                            <label class="font-medium text-slate-300">ค่าแรงชิ้นส่วนปืน:</label>
+                            <span id="cfg_fee_gun_display" class="font-mono text-sm font-bold text-sky-400">5,500 เหรียญ</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <button type="button" onclick="adjustCfgFee('cfg_fee_gun', -100)" class="w-8 h-8 rounded-lg bg-black hover:bg-[#111520] border border-[#242b3b] text-slate-300 font-bold active:scale-95 transition-all">-100</button>
+                            <input type="range" id="cfg_fee_gun" min="500" max="30000" step="100" value="5500" oninput="syncCfgDisplay('cfg_fee_gun', 'cfg_fee_gun_display', ' เหรียญ')" class="flex-1 accent-sky-500 bg-[#161a24] h-2 rounded-lg cursor-pointer">
+                            <button type="button" onclick="adjustCfgFee('cfg_fee_gun', 100)" class="w-8 h-8 rounded-lg bg-black hover:bg-[#111520] border border-[#242b3b] text-slate-300 font-bold active:scale-95 transition-all">+100</button>
+                        </div>
                     </div>
-                    <div class="space-y-1">
-                        <label class="font-medium text-slate-300">ค่าแรงแผ่นเกราะ:</label>
-                        <input type="number" id="cfg_fee_armor" value="5000" class="w-full bg-black border border-[#242b3b] rounded-lg p-2 font-mono text-amber-300">
+
+                    <!-- Fee: Armor Plate -->
+                    <div class="bg-[#050608] p-3 rounded-xl border border-[#1a1e28] space-y-2">
+                        <div class="flex justify-between items-center">
+                            <label class="font-medium text-slate-300">ค่าแรงแผ่นเกราะ:</label>
+                            <span id="cfg_fee_armor_display" class="font-mono text-sm font-bold text-purple-400">5,000 เหรียญ</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <button type="button" onclick="adjustCfgFee('cfg_fee_armor', -100)" class="w-8 h-8 rounded-lg bg-black hover:bg-[#111520] border border-[#242b3b] text-slate-300 font-bold active:scale-95 transition-all">-100</button>
+                            <input type="range" id="cfg_fee_armor" min="500" max="30000" step="100" value="5000" oninput="syncCfgDisplay('cfg_fee_armor', 'cfg_fee_armor_display', ' เหรียญ')" class="flex-1 accent-purple-500 bg-[#161a24] h-2 rounded-lg cursor-pointer">
+                            <button type="button" onclick="adjustCfgFee('cfg_fee_armor', 100)" class="w-8 h-8 rounded-lg bg-black hover:bg-[#111520] border border-[#242b3b] text-slate-300 font-bold active:scale-95 transition-all">+100</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -982,7 +1015,48 @@
             logs: []
         };
 
+        function refreshItemBadgesUI() {
+            // โหมดต่อครั้ง (Card Badges)
+            const cardFeeIngot = document.getElementById('card_fee_ingot');
+            const cardFeeGun = document.getElementById('card_fee_gun');
+            const cardFeeArmor = document.getElementById('card_fee_armor');
+            if (cardFeeIngot) cardFeeIngot.innerText = `ค่าแรง ${CONFIG.fees.ingot.toLocaleString()}/ชิ้น`;
+            if (cardFeeGun) cardFeeGun.innerText = `ค่าแรง ${CONFIG.fees.gun_parts.toLocaleString()}/ชิ้น`;
+            if (cardFeeArmor) cardFeeArmor.innerText = `ค่าแรง ${CONFIG.fees.armor.toLocaleString()}/ชิ้น`;
+
+            const cardRateIngot = document.getElementById('card_rate_ingot');
+            const cardRateGun = document.getElementById('card_rate_gun');
+            const cardRateArmor = document.getElementById('card_rate_armor');
+            if (cardRateIngot) cardRateIngot.innerText = `โอกาส ${Math.round(CONFIG.rates.ingot * 100)}%`;
+            if (cardRateGun) cardRateGun.innerText = `โอกาส ${Math.round(CONFIG.rates.gun_parts * 100)}%`;
+            if (cardRateArmor) cardRateArmor.innerText = `โอกาส ${Math.round(CONFIG.rates.armor * 100)}%`;
+
+            // โหมดเหมา (Bulk Labels)
+            const bulkRateIngot = document.getElementById('bulk_rate_label_ingot');
+            const bulkRateGun = document.getElementById('bulk_rate_label_gun');
+            const bulkRateArmor = document.getElementById('bulk_rate_label_armor');
+            if (bulkRateIngot) bulkRateIngot.innerText = `เรท ${CONFIG.fees.ingot.toLocaleString()}/ชิ้น (ใช้แร่ 5 อัน)`;
+            if (bulkRateGun) bulkRateGun.innerText = `เรท ${CONFIG.fees.gun_parts.toLocaleString()}/ชิ้น (เหล็ก 1 + แร่ 3)`;
+            if (bulkRateArmor) bulkRateArmor.innerText = `เรท ${CONFIG.fees.armor.toLocaleString()}/ชิ้น (เหล็ก 1 + แร่ 1)`;
+
+            // โหมดจำลอง (Sim Cards)
+            const simFeeIngot = document.getElementById('sim_badge_fee_ingot');
+            const simFeeGun = document.getElementById('sim_badge_fee_gun');
+            const simFeeArmor = document.getElementById('sim_badge_fee_armor');
+            if (simFeeIngot) simFeeIngot.innerText = `${CONFIG.fees.ingot.toLocaleString()}/ติด`;
+            if (simFeeGun) simFeeGun.innerText = `${CONFIG.fees.gun_parts.toLocaleString()}/ติด`;
+            if (simFeeArmor) simFeeArmor.innerText = `${CONFIG.fees.armor.toLocaleString()}/ติด`;
+
+            const simRateIngot = document.getElementById('sim_badge_rate_ingot');
+            const simRateGun = document.getElementById('sim_badge_rate_gun');
+            const simRateArmor = document.getElementById('sim_badge_rate_armor');
+            if (simRateIngot) simRateIngot.innerText = `โอกาส ${Math.round(CONFIG.rates.ingot * 100)}%`;
+            if (simRateGun) simRateGun.innerText = `โอกาส ${Math.round(CONFIG.rates.gun_parts * 100)}%`;
+            if (simRateArmor) simRateArmor.innerText = `โอกาส ${Math.round(CONFIG.rates.armor * 100)}%`;
+        }
+
         window.onload = function() {
+            refreshItemBadgesUI();
             updateSingleMode();
             updateBulkMode();
         };
@@ -1433,6 +1507,37 @@
         function toggleConfigModal() {
             const modal = document.getElementById('config-modal');
             modal.classList.toggle('hidden');
+            if (!modal.classList.contains('hidden')) {
+                // Sync values to inputs & displays
+                document.getElementById('cfg_ore_price').value = CONFIG.orePrice;
+                syncCfgDisplay('cfg_ore_price', 'cfg_ore_val_display');
+
+                document.getElementById('cfg_fee_ingot').value = CONFIG.fees.ingot;
+                syncCfgDisplay('cfg_fee_ingot', 'cfg_fee_ingot_display', ' เหรียญ');
+
+                document.getElementById('cfg_fee_gun').value = CONFIG.fees.gun_parts;
+                syncCfgDisplay('cfg_fee_gun', 'cfg_fee_gun_display', ' เหรียญ');
+
+                document.getElementById('cfg_fee_armor').value = CONFIG.fees.armor;
+                syncCfgDisplay('cfg_fee_armor', 'cfg_fee_armor_display', ' เหรียญ');
+
+                document.getElementById('cfg_rate_ingot').value = Math.round(CONFIG.rates.ingot * 100);
+                document.getElementById('cfg_rate_gun').value = Math.round(CONFIG.rates.gun_parts * 100);
+                document.getElementById('cfg_rate_armor').value = Math.round(CONFIG.rates.armor * 100);
+            }
+        }
+
+        function syncCfgDisplay(inputId, displayId, suffix = '') {
+            const val = parseInt(document.getElementById(inputId).value) || 0;
+            document.getElementById(displayId).innerText = `${val.toLocaleString()}${suffix}`;
+        }
+
+        function adjustCfgFee(inputId, delta) {
+            const input = document.getElementById(inputId);
+            let val = (parseInt(input.value) || 0) + delta;
+            val = Math.max(parseInt(input.min) || 0, Math.min(parseInt(input.max) || 99999, val));
+            input.value = val;
+            input.dispatchEvent(new Event('input'));
         }
 
         function saveConfig() {
@@ -1446,6 +1551,7 @@
             CONFIG.fees.armor = parseFloat(document.getElementById('cfg_fee_armor').value) || 5000;
 
             toggleConfigModal();
+            refreshItemBadgesUI();
             updateSingleMode();
             updateBulkMode();
             showToast("บันทึกการตั้งค่าเรียบร้อยแล้ว!");
@@ -1453,13 +1559,28 @@
 
         function resetDefaults() {
             document.getElementById('cfg_ore_price').value = 1200;
+            syncCfgDisplay('cfg_ore_price', 'cfg_ore_val_display');
+
+            document.getElementById('cfg_fee_ingot').value = 3500;
+            syncCfgDisplay('cfg_fee_ingot', 'cfg_fee_ingot_display', ' เหรียญ');
+
+            document.getElementById('cfg_fee_gun').value = 5500;
+            syncCfgDisplay('cfg_fee_gun', 'cfg_fee_gun_display', ' เหรียญ');
+
+            document.getElementById('cfg_fee_armor').value = 5000;
+            syncCfgDisplay('cfg_fee_armor', 'cfg_fee_armor_display', ' เหรียญ');
+
             document.getElementById('cfg_rate_ingot').value = 90;
             document.getElementById('cfg_rate_gun').value = 95;
             document.getElementById('cfg_rate_armor').value = 100;
-            document.getElementById('cfg_fee_ingot').value = 3500;
-            document.getElementById('cfg_fee_gun').value = 5500;
-            document.getElementById('cfg_fee_armor').value = 5000;
             saveConfig();
+        }
+
+        function adjustSingleQty(delta) {
+            const input = document.getElementById('single_qty');
+            let val = (parseInt(input.value) || 0) + delta;
+            input.value = Math.max(0, val);
+            updateSingleMode();
         }
 
         // ======================= CLIPBOARD & UTILITIES =======================
